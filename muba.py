@@ -1,0 +1,24 @@
+s = """U1NIU0lHAAAAAQAAAZcAAAAHc3NoLXJzYQAAAAMBAAEAAAGBALHSGWNTAPfLpm6JNnfnkZ
+zZUeXm64VQu4ySKEWRKHaKtBxNDFeGRjzvAc/7a9ygjyePwuA6lgKtJ+p8/5TKd1TJAo6d
+TX94HdHIMIQ5hitJcYz1Oz5gwyj4h+7FTn0r2ekGCfB6u6paZu/zugq5gvOUAEFCo5eRqM
+9f1qTn9BoCGI7BsUqZIxmTPksbLns+2QNCbxkavhDsLl3Q0uvEUboajmuxXXykoCZhnHs2
+SXumKoSrH4QsMrpTlM0on00sJJu91CnsEfB5Caytj7YnlE/HVzj2pANiyrHs/4lU/UOHpj
+xCubFkqDFCG2A2sdESp1BzgKqyq/ygyotXzsq8JX44mPZnh1Q39TTWeLSKueZrkiPpL9dT
+PAN6HMcE562m4ta36VASaeK1sfqAS1QsiUo88OyfcXBsNMU0pZdPmke35srgy9smaHRHlR
+QsziHL1Wh9/2Mx2iApwGNQrXJVtLHWH7HfNWZSixVIoh1qIp+NiBdo+FpPXgdINmZqLkmU
+gwAAAAdsc3Bvc2VkAAAAAAAAAAZzaGE1MTIAAAGUAAAADHJzYS1zaGEyLTUxMgAAAYAi4N
+OB6iwpLlpJObcekob+Wptyn5wX2lwOciroz9d/lozS8DzmCPdp8aoI49N8/VPFop8jr3vs
+UmDCv7nm9h2XWevhaYj1Xv7BWxtSrkfxw9MllNK9a0UE8Ngz6j06JzlQDs9Aa3BPSawbXS
+Iwp1K6VfylcgYclJkujwLMpiyVN9NrNqv8Uao4M4jRuPjD7XgldtD0Vfv02KWg0tn7ahSg
+e/toVaJzMGjaGe9JzQ9lXvK9PP8i11cY7pqr42fnPbGH3onQ1M+zWO9r2NBlLMvUSLLLKJ
+Ma4usdcSg+9mvO14Sc5DzZzCGYkoWqv7dkBZfHE7FuNkJS+d1UDdaFglfTvOcYJ5BOoBai
+kdmD4vl07OE5JmzGnoHfNnmcbJl0IQxVh9ZeBUeWW4grCQiVJmU8Q3JDx2IHWX0RE3to+L
+ztbpVZNhKrhFGv+NdvqyA1Ye73Qu9yoi5mRncC63VWbdDIfaynZktuqLOzMvOTy3jTHpIJ
+OjmneiOIYosWQ731C5k="""
+
+# for i in s:
+#     if i.isdigit():
+#         print(i,end="")
+
+a = "".join(filter(lambda x: x.isdigit() and int(x) > 5 and int(x) % 2 == 0, s))
+print(a)
